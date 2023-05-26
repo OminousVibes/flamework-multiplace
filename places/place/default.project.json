@@ -1,0 +1,70 @@
+{
+	"name": "place",
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/place/src/server"
+			},
+			"TS/common": {
+				"$path": "out/common/src/server"
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "../../include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": {
+						"$path": "../../node_modules/@rbxts"
+					},
+					"@flamework": {
+						"$path": "../../node_modules/@flamework"
+					}
+				}
+			},
+			"TS": {
+				"$path": "out/place/src/shared"
+			},
+			"TS/common": {
+				"$path": "out/common/src/shared"
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"TS": {
+					"$path": "out/place/src/client"
+				},
+				"TS/common": {
+					"$path": "out/common/src/client"
+				}
+			}
+		},
+		"Workspace": {
+			"$className": "Workspace",
+			"$properties": {
+				"FilteringEnabled": true
+			}
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		}
+	}
+}
